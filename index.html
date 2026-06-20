@@ -14,7 +14,6 @@
             <ul class="nav-link">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -30,7 +29,6 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -66,7 +64,7 @@
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Exp Icon" class="icon">
                         <h3>Experience</h3>
-                        <p>2 years <br/>Backend Developer</p>
+                        <p>4+ years <br/>Backend Developer</p>
                     </div>
                     <div class="details-container">
                       <img src="./assets/education.png" alt="Edu Icon" class="icon">
@@ -75,7 +73,7 @@
                     </div>
                 </div>
             <div class="text-container">
-                <p>Aspiring software and data specialist with a strong foundation in Python, web development, and data analysis. My academic background spans Software Development and Economics & Business Administration, giving me a unique blend of programming and analytical skills. I have hands-on experience as a Junior Python Developer and a deep interest in data science, machine learning, and backend development. Proficient in building REST APIs, working with databases, and applying data-driven approaches to solve real-world problems. Constantly growing, I’m eager to contribute to impactful tech and data-driven projects.</p>
+                <p>Backend Software Engineer with 4+ years of experience designing and shipping scalable SaaS platforms across CRM and fintech domains. I work primarily in Go and Python, with deep expertise in RESTful, gRPC, and GraphQL API development, microservices architecture, and performance optimization. My academic background spans Software Development and Economics & Business Administration, giving me a blend of engineering rigor and analytical thinking. I have a proven track record of cutting API response times, hardening security, and integrating complex third-party systems in production — and a growing interest in data science and machine learning. Always looking to take on impactful, data-driven engineering challenges.</p>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#experience'">
@@ -83,8 +81,62 @@
     <section id="experience">
         <p class="section_text_p1">Explore My</p>
         <h1 class="title">Experience</h1>
+
         <div class="experience-details-container">
-            <div class="about-containers">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            <div class="work-experience-list">
+                <div class="job-entry details-container">
+                    <h3>Software Developer — EPAM Systems</h3>
+                    <p class="job-dates">Mar 2023 – Jan 2026 · Remote/Hybrid</p>
+                    <ul class="job-bullets">
+                        <li>Rewrote a lead scoring service from Python (Flask/Celery) to Go, reducing p95 latency from 1.2s to 80ms and increasing throughput from 600 to 8K leads/min</li>
+                        <li>Built an event-driven email campaign tracking pipeline (Kafka, Redis, PostgreSQL) processing 2M+ daily events with exactly-once delivery, cutting latency from 5 minutes to ~2 seconds</li>
+                        <li>Designed and implemented a custom API gateway in Go with Redis-based rate limiting, handling 2K req/sec at p99 &lt;5ms and reducing partner onboarding time from 2 weeks to 1 day</li>
+                        <li>Implemented bidirectional CRM synchronization (Salesforce, HubSpot) with configurable field mapping and OAuth2, cutting sync latency from 1–2 days to under 1 minute</li>
+                        <li>Built an A/B testing framework using multi-armed bandit (Thompson Sampling), increasing average campaign open rate by 8% and cutting experiment setup time from 2 days to 5 minutes</li>
+                    </ul>
+                </div>
+                <div class="job-entry details-container">
+                    <h3>Software Developer — Kompanion Bank</h3>
+                    <p class="job-dates">Jan 2022 – Feb 2023 · Remote/Hybrid</p>
+                    <ul class="job-bullets">
+                        <li>Optimized the appointment booking API via query refactoring, optimistic locking, and Redis caching, reducing p95 latency from 850ms to 95ms and patient drop-off rate from 5% to 1.2%</li>
+                        <li>Built a multi-channel notification service (SMS/email/push) that cut no-shows from 18% to 7%, saving roughly $49.5K/month</li>
+                        <li>Built a HIPAA-compliant document service (S3, ABAC), shrinking the database from 80GB to 2GB and cutting backup time from 3 hours to 10 minutes</li>
+                        <li>Implemented Elasticsearch-based fuzzy search for doctors and appointment slots, cutting search latency from 800ms to ~35ms and increasing search-to-booking conversion by 15%</li>
+                        <li>Implemented saved-search and real-time alerts using Elasticsearch percolator queries, increasing DAU by 18% and 7-day retention from 32% to 41%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills-list">
+                
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-containers">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                            <div>
+                                <h3>Go</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                            <div>
+                                <h3>SQL/NoSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
                 <div class="details-container">
                     <h2 class="experience-sub-title">Frameworks and Technologies</h2>
                     <div class="article-containers">
@@ -112,83 +164,29 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience" class="icon">
                             <div>
-                                <h3>Docker</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Programming Languages</h2>
-                    <div class="article-containers">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience" class="icon">
-                            <div>
-                                <h3>Python</h3>
+                                <h3>Docker/Kubernetes</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience" class="icon">
                             <div>
-                                <h3>HTML/CSS</h3>
+                                <h3>Apache Kafka</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience" class="icon">
                             <div>
-                                <h3>PL/SQL</h3>
+                                <h3>gRPC</h3>
                                 <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Basic</p>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-      
-        <div class="projects-container">
-          <div class="details-container color-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-            <h2 class="experience-sub-title project-title">Web parser</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/seytekk/mashinakg_pars'">Github</button>
-              
-            </div>
-          </div>
-          
-          <div class="details-container color-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img">
-            <h2 class="experience-sub-title project-title">Online Store</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/seytekk/shirtshop'">Github</button>
-              
-            </div>
-          </div>
-      
-          <div class="details-container color-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img">
-            <h2 class="experience-sub-title project-title">FlashCard App</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn">Github</button>
-              <!--<button class="btn btn-color-2 project-btn">Demo</button>-->
-              
-            </div>
-          </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'">
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#contact'">
     </section>
     <section id="contact">
         <p class="section_text_p1">Get In Touch</p>
@@ -210,7 +208,6 @@
                 <ul class="nav-link">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
