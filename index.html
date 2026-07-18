@@ -64,7 +64,7 @@
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Exp Icon" class="icon">
                         <h3>Experience</h3>
-                        <p>4+ years <br/>Backend Developer</p>
+                        <p>5+ years <br/>Backend Developer</p>
                     </div>
                     <div class="details-container">
                       <img src="./assets/education.png" alt="Edu Icon" class="icon">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             <div class="text-container">
-                <p>Backend Software Engineer with 4+ years of experience designing and shipping scalable SaaS platforms across CRM and fintech domains. I work primarily in Go and Python, with deep expertise in RESTful, gRPC, and GraphQL API development, microservices architecture, and performance optimization. My academic background spans Software Development and Economics & Business Administration, giving me a blend of engineering rigor and analytical thinking. I have a proven track record of cutting API response times, hardening security, and integrating complex third-party systems in production — and a growing interest in data science and machine learning. Always looking to take on impactful, data-driven engineering challenges.</p>
+                <p>Go backend engineer with 5 years of commercial experience building high-load microservice systems for U.S. products (B2B lead generation, healthcare, real estate). Strong with PostgreSQL, Kafka, Redis, gRPC, Docker and Kubernetes; design event-driven and distributed systems with a focus on performance, fault tolerance, idempotency and observability. Growing toward distributed-systems architecture and technical leadership</p>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#experience'">
@@ -86,25 +86,31 @@
             <h2 class="experience-sub-title">Work Experience</h2>
             <div class="work-experience-list">
                 <div class="job-entry details-container">
-                    <h3>Software Developer — EPAM Systems</h3>
-                    <p class="job-dates">Mar 2023 – Jan 2026 · Remote/Hybrid</p>
+                    <h3>Go Backend Developer  — Glorium Technologies</h3>
+                    <p class="job-dates">Apr 2023 – current </p>
                     <ul class="job-bullets">
-                        <li>Rewrote a lead scoring service from Python (Flask/Celery) to Go, reducing p95 latency from 1.2s to 80ms and increasing throughput from 600 to 8K leads/min</li>
-                        <li>Built an event-driven email campaign tracking pipeline (Kafka, Redis, PostgreSQL) processing 2M+ daily events with exactly-once delivery, cutting latency from 5 minutes to ~2 seconds</li>
-                        <li>Designed and implemented a custom API gateway in Go with Redis-based rate limiting, handling 2K req/sec at p99 &lt;5ms and reducing partner onboarding time from 2 weeks to 1 day</li>
-                        <li>Implemented bidirectional CRM synchronization (Salesforce, HubSpot) with configurable field mapping and OAuth2, cutting sync latency from 1–2 days to under 1 minute</li>
-                        <li>Built an A/B testing framework using multi-armed bandit (Thompson Sampling), increasing average campaign open rate by 8% and cutting experiment setup time from 2 days to 5 minutes</li>
+                        <li>Optimized the appointment-booking API: p95 from 850ms to 95ms, p99 from 2s to 180ms, 500 RPS
+with no degradation (optimistic locking, composite index, Redis cache-aside)</li>
+                        <li>Built a notification service (multi-channel SMS/push/email, outbox pattern, retry with backoff): no-
+shows from 18% to 7%, $40K+/month saved, 15K notifications/day.</li>
+                        <li>Developed a HIPAA-compliant document service (S3 SSE-256, presigned URLs, ABAC, ClamAV scan):
+DB size from 40GB to 2GB, backup from 3 hours to 10 min.– Added full-text doctor/slot search on Elasticsearch: from 800ms to 35ms, search -> booking conversion +15%.</li>
+                        <li>Contributed to the monolith-to-microservices migration (choreography saga over Kafka, protobuf con-
+tracts, compensating actions): scaling (40 -> 90 clinics).</li>
+                        <li>Real estate: built a listings-aggregation service across 6 MLS sources (incremental sync, rate limiting,
+circuit breaker): refresh from 6 hours to 5 min, 15× lower DB load, engagement +22%</li>
                     </ul>
                 </div>
                 <div class="job-entry details-container">
-                    <h3>Software Developer — Kompanion Bank</h3>
-                    <p class="job-dates">Jan 2022 – Feb 2023 · Remote/Hybrid</p>
+                    <h3>Go Backend Developer, Platform Engineering  — Callbox Inc</h3>
+                    <p class="job-dates">Mar 2021 – Apr 2023</p>
                     <ul class="job-bullets">
-                        <li>Optimized the appointment booking API via query refactoring, optimistic locking, and Redis caching, reducing p95 latency from 850ms to 95ms and patient drop-off rate from 5% to 1.2%</li>
-                        <li>Built a multi-channel notification service (SMS/email/push) that cut no-shows from 18% to 7%, saving roughly $49.5K/month</li>
-                        <li>Built a HIPAA-compliant document service (S3, ABAC), shrinking the database from 80GB to 2GB and cutting backup time from 3 hours to 10 minutes</li>
-                        <li>Implemented Elasticsearch-based fuzzy search for doctors and appointment slots, cutting search latency from 800ms to ~35ms and increasing search-to-booking conversion by 15%</li>
-                        <li>Implemented saved-search and real-time alerts using Elasticsearch percolator queries, increasing DAU by 18% and 7-day retention from 32% to 41%</li>
+                        <li>Rewrote the lead-scoring service from Python to Go: p95 latency from 1.2s to 170ms, throughput from 600 to 8,000 leads/min per instance; lead conversion +12%.</li>
+                        <li>Built event-driven email-campaign tracking with exactly-once processing of 2M+ events/day: latency from 20s to 2s, duplicates from 0.3% to 0%, analytics queries 8 times faster.</li>
+                        <li>Designed and shipped a custom API gateway (Redis rate limiting, auth, circuit breaker): up to 2K RPS at p99 5ms; auto-blocked a partner DDoS; partner onboarding from 2 weeks to 1 day.</li>
+                        <li>Implemented two-way CRM sync with Salesforce and HubSpot: sync latency from 1 day to 10 min, 0% duplicates, 15 clients onboarded in one quarter.</li>
+                        <li>Introduced distributed tracing (OpenTelemetry + Jaeger): shared library and instrumentation across 5 services, included trace propagation via Kafka — incident debugging from 30–60 min to 2–3 min.</li>
+                        <li>Optimized the audit-log pipeline for SOC 2 (Kafka -> Elasticsearch + S3): audit queries from 30s to 1s,−20% load on the primary DB; SOC 2 passed</li>
                     </ul>
                 </div>
             </div>
